@@ -7,7 +7,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/moodbase/libenv/sig"
+	"github.com/moodbased/libenv/sig"
 )
 
 const (
