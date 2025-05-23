@@ -62,6 +62,11 @@ func LoadEnvString(v string) string {
 // LoadEnvStringMute loads a string from the environment variable without logging.
 func LoadEnvStringMute(v string) string {
 	env := os.Getenv(v)
+	if env != "" {
+		slog.Info("[ENV] loaded", v, "******")
+	} else {
+		slog.Info("[ENV] use default value", v, env)
+	}
 	return env
 }
 
